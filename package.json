@@ -4,8 +4,8 @@
   "description": "code editor",
   "main": "build.js",
   "scripts": {
-    "test": "@echo test ok",
-    "build" : "electron ."
+    "start": "electron .",
+    "package": "electron-packager . MyElectronApp --platform=win32 --arch=x64 --out=dist"
   },
   "author": "Jit Debnath",
   "license": "ISC"
