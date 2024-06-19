@@ -20,9 +20,16 @@ include your name with pull request.
 * run this command
 ```bash 
     npm install --save-dev electron@latest
-    npm run build
+    npm run start
 ```
 the app should appear after this. 
+
+#### for build process(windows only)
+```bash
+    npm install --save-dev electron-builder@latest
+    npm run build
+```
+this will give you a msi installer for this application.
 
 ---
 ### report issues in issues section

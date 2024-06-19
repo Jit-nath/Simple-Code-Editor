@@ -1,12 +1,37 @@
 {
   "name": "simple-code-editor",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "code editor",
   "main": "build.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . MyElectronApp --platform=win32 --arch=x64 --out=dist"
+    "package": "electron-packager . MyElectronApp --platform=win32 --arch=x64 --out=dist",
+    "build": "electron-builder"
   },
   "author": "Jit Debnath",
-  "license": "ISC"
+  "devDependencies": {
+    "electron": "^31.0.1",
+    "electron-builder": "^24.13.3"
+  },
+   "build": {
+    "appId": "com.NEO.Code-Editor",
+    "productName": "Code-Editor",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "build.js",
+      "package.json",
+      "index.html",
+      "style.css"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "msi",
+          "arch": ["x64", "ia32"]
+        }
+      ],
+       "icon": "icon.png"
+    }
+  }
 }
