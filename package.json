@@ -1,0 +1,12 @@
+{
+  "name": "simple-code-editor",
+  "version": "0.0.1",
+  "description": "code editor",
+  "main": "build.js",
+  "scripts": {
+    "test": "@echo test ok",
+    "build" : "electron ."
+  },
+  "author": "Jit Debnath",
+  "license": "ISC"
+}

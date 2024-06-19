@@ -1,0 +1,42 @@
+* {
+    margin: none;
+    border: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+.coding-ground {
+    height: 65vh;
+    width: 80vw;
+    margin: 10px;
+}
+
+#code-input-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    resize: none;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 30px;
+}
+
+.terminal {
+    height: 25vh;
+    width: 80vw;
+    margin: 10px;
+}
+
+#command-input-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    resize: none;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 30px;
+}
