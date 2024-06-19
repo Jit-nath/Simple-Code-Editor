@@ -9,9 +9,9 @@ include your name with pull request.
 
 ---
 ### To run the package
-* download git[https://www.git-scm.com/].
-* download nodejs. [https://nodejs.org/en] [this project includes version: v20.14.0(LTS)].
-* clone this package.
+* download git[https://www.git-scm.com/]
+* download nodejs. [https://nodejs.org/en] [this project includes version: v20.14.0(LTS)]
+* clone this package
 <br> open terminal and paste this command
 ```bash
     git clone https://github.com/Jit-nath/Simple-Code-Editor.git
