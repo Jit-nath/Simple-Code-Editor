@@ -1,3 +1,4 @@
 # distribution and node package folders
 dist/
 node_modules/
+.vscode
