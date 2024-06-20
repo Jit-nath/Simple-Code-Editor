@@ -13,6 +13,9 @@ html {
     height: 65vh;
     width: 80vw;
     margin: 10px;
+    resize: both;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 #code-input-area {
@@ -29,6 +32,9 @@ html {
     height: 25vh;
     width: 80vw;
     margin: 10px;
+    resize: both;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 #command-input-area {
