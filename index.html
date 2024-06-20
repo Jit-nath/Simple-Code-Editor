@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OMEGA</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="png" href="png/icon.png" /> // ye kam nehi karega app mein main.js se karna parega
+
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/coding-ground.css">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+
 </head>
 
 <body>
     <div class="coding-ground">
-        <textarea id="code-input-area"></textarea>
-        <div class="row-number"></div>
+        <div id="line-numbers"></div>
+        <textarea id="code-input-area" oninput="updateLineNumbers()" onscroll="syncScroll()"></textarea>
     </div>
 
     <div class="terminal">
@@ -22,22 +27,23 @@
     <div class="sidebar">
 
         <div class="expand-on-click" id="files">
-            <img class="image" src="png/expand.png" alt="icon">
+            <img class="image" src="png/expand.png" alt="explorer">
         </div>
         <div class="expand-on-click" id="git">
-            <img class="image" src="png/expand.png" alt="icon">
+            <img class="image" src="png/expand.png" alt="git">
         </div>
         <div class="expand-on-click" id="search">
-            <img class="image" src="png/expand.png" alt="icon">
+            <img class="image" src="png/expand.png" alt="search">
         </div>
         <div class="expand-on-click" id="themes">
-            <img class="image" src="png/expand.png" alt="icon">
+            <img class="image" src="png/expand.png" alt="themes">
         </div>
 
     </div>
-    <div class="sidebad-expanded">
 
+    <div class="sidebad-expanded">
     </div>
+    <script src="/js/coding-ground.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+.terminal {
+    height: 25vh;
+    width: 80vw;
+    margin: 10px;
+}
+
+#command-input-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    resize: none;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 30px;
+}
