@@ -1,0 +1,21 @@
+.coding-ground {
+    height: 65vh;
+    width: 85vw;
+    margin: 20px;
+    display: flex;
+}
+
+.line-numbers {
+    height: 100%;
+    width: 50px;
+    border: 1px solid blue;
+    padding-top: 8px;
+}
+
+.code-input-area {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    padding-top: 8px;
+    resize: none;
+}

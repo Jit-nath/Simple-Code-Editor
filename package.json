@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "code editor",
   "main": "main.js",
-  "watch": ["main.js"],
+  "watch": "main.js",
   "ext": "js,json,html,css",
-  "ignore": ["node_modules/*"],
+  "ignore": "node_modules/*",
   "exec": "electron .",
   "scripts": {
     "start": "electron .",
