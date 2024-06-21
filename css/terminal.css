@@ -1,7 +1,6 @@
 .terminal {
-    height: 25vh;
-    width: 80vw;
-    margin: 10px;
+    height: 30%;
+    width: auto;
 }
 
 #command-input-area {
@@ -12,4 +11,8 @@
     background-color: rgb(17, 17, 17);
     color: white;
     padding: 30px;
+}
+
+#command-input-area:focus {
+    outline: none;
 }

@@ -10,39 +10,43 @@
     <link rel="stylesheet" href="css/coding-ground.css">
     <link rel="stylesheet" href="css/terminal.css">
     <link rel="stylesheet" href="css/sidebar.css">
-
-
 </head>
 
 <body>
-    <div class="coding-ground">
-        <div class="line-numbers"></div>
-        <textarea class="code-input-area"></textarea>
-    </div>
 
-    <div class="terminal">
-        <textarea id="command-input-area"></textarea>
-    </div>
+    <main>
+        <seletion class="leftside">
+            <div class="coding-ground">
+                <div class="line-numbers"></div>
+                <textarea class="code-input-area"></textarea>
+            </div>
 
-    <div class="sidebar">
+            <div class="terminal">
+                <textarea id="command-input-area"></textarea>
+            </div>
+        </seletion>
 
-        <div class="expand-on-click" id="files">
-            <img class="image" src="png/expand.png" alt="explorer">
-        </div>
-        <div class="expand-on-click" id="git">
-            <img class="image" src="png/expand.png" alt="git">
-        </div>
-        <div class="expand-on-click" id="search">
-            <img class="image" src="png/expand.png" alt="search">
-        </div>
-        <div class="expand-on-click" id="themes">
-            <img class="image" src="png/expand.png" alt="themes">
-        </div>
+        <selection class="rightside">
+            <div class="sidebar">
 
-    </div>
+                <div class="expand-on-click" id="files">
+                    <img class="image" src="png/expand.png" alt="explorer">
+                </div>
+                <div class="expand-on-click" id="git">
+                    <img class="image" src="png/expand.png" alt="git">
+                </div>
+                <div class="expand-on-click" id="search">
+                    <img class="image" src="png/expand.png" alt="search">
+                </div>
+                <div class="expand-on-click" id="themes">
+                    <img class="image" src="png/expand.png" alt="themes">
+                </div>
 
-    <div class="sidebad-expanded">
-    </div>
+            </div>
+        </selection>
+    </main>
+
+
     <script src="/js/coding-ground.js"></script>
 </body>
 
