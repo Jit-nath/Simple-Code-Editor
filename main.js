@@ -1,8 +1,9 @@
 const { app, BrowserWindow } = require('electron');
 function NewWindow() {
     const window = new BrowserWindow({
-        height: 600,
-        width: 900
+        minHeight: 600,
+        minWidth: 900,
+        frame: false
     });
     window.maximize();
     window.loadFile('index.html');
