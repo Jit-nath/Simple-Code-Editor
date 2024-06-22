@@ -22,7 +22,6 @@ main {
     margin: 10px 5px 10px 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .rightside {
