@@ -6,6 +6,7 @@
     font-size: large;
     color: white;
     overflow: hidden;
+    user-select: none;
 }
 
 html {

@@ -1,0 +1,40 @@
+.titlebar {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    -webkit-app-region: drag;
+    font-size: small;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+}
+
+.icon img {
+    height: 30px;
+    width: 30px;
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+}
+
+.menubar span {
+    margin: 0 10px;
+}
+
+.window-control {
+    display: flex;
+}
+
+.window-control span {
+    width: 50px;
+    cursor: pointer;
+}
