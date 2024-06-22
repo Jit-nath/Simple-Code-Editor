@@ -11,14 +11,36 @@
     <link rel="stylesheet" href="css/terminal.css">
     <link rel="stylesheet" href="css/sidebar.css">
 
+    <script src="js/ace.js"></script>
+    <script src="js/mode-c_cpp.js"></script>
+    <script src="js/mode-css.js"></script>
+    <script src="js/mode-html.js"></script>
+    <script src="js/mode-java.js"></script>
+    <script src="js/mode-javascript.js"></script>
+    <script src="js/mode-json.js"></script>
+    <script src="js/mode-python.js"></script>
+    <script src="js/theme-chaos.js"></script>
+    <script src="js/theme-dracula.js"></script>
+    <script src="js/theme-monokai.js"></script>
+    <script src="js/theme-twilight.js"></script>
+
+    <style type="text/css" media="screen">
+        #editor {
+            position: relative;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+
 </head>
 
 <body>
     <main>
         <section class="leftside">
             <div class="coding-ground">
-                <div class="line-numbers"></div>
-                <textarea class="code-input-area"></textarea>
+                <div id="editor"></div>
             </div>
 
             <div class="terminal">
@@ -48,6 +70,12 @@
 
 
     <script src="/js/coding-ground.js"></script>
+
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/chaos");
+        editor.session.setMode("ace/mode/c_cpp");
+    </script>
 </body>
 
 </html>
