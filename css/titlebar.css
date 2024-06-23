@@ -5,9 +5,7 @@
     flex-direction: row;
     align-items: center;
     background-color: rgb(31, 31, 31);
-    color: #fff;
-    -webkit-app-region: drag;
-    font-size: small;
+    -webkit-app-region: drag
 }
 
 .icon {
@@ -27,14 +25,26 @@
 }
 
 .menubar span {
+    font-size: small;
     margin: 0 10px;
 }
 
 .window-control {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .window-control span {
     width: 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.window-control:hover {
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
 }
