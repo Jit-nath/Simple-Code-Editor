@@ -17,6 +17,7 @@ html {
 main {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
 }
 
 .leftside {
