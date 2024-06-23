@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     background-color: rgb(31, 31, 31);
-    -webkit-app-region: drag
+    -webkit-app-region: drag;
 }
 
 .icon {
@@ -23,6 +23,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    -webkit-app-region: no-drag;
 }
 
 .menubar span {
@@ -42,6 +43,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    -webkit-app-region: no-drag;
 }
 
 .window-control .box {
