@@ -20,31 +20,55 @@
 }
 
 .menubar {
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .menubar span {
     font-size: small;
-    margin: 0 10px;
+    height: 100%;
+    padding: 5px 13px;
+}
+
+.menubar span:hover {
+    background-color: rgb(73, 73, 73);
+    border-radius: 5px;
 }
 
 .window-control {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.window-control span {
-    width: 50px;
     height: 100%;
-    text-align: center;
 }
 
-.window-control:hover {
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
+.window-control .box {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-control .box:hover {
+    background-color: rgb(73, 73, 73);
+
+}
+
+#minimize {
+    margin: 0 3px;
+    transform: translateY(-7px);
+
+}
+
+#window {
+    font-size: small;
+    margin: 0 5px;
+    transform: scale(1.2);
+}
+
+#close {
+    transform: scale(0.9);
 }
