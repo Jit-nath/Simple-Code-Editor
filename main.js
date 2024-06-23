@@ -4,8 +4,15 @@ function NewWindow() {
         minHeight: 600,
         minWidth: 900,
         frame: false
+
+        height: 600,
+        width: 900,
+        frame: false,
+        webPreferences: {
+            nodeIntegration: true, 
+            contextIsolation: false 
+        }
     });
-    window.maximize();
     window.loadFile('index.html');
 }
 
