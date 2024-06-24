@@ -6,6 +6,10 @@
     background-color: rgb(17, 17, 17);
 }
 
+#editor {
+    line-height: 24px;
+}
+
 .tabs-bar {
     height: 50px;
     background-color: rgb(17, 17, 17);
