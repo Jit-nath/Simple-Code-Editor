@@ -32,13 +32,13 @@ main {
 
 .leftside {
     flex: 1;
-    margin: 10px 5px;
+    margin: 10px 5px 10px 10px;
 }
 
 .rightside {
     width: 70px;
     height: 100%;
-    margin: 10px 5px;
+    margin: 10px 5px 10px 0;
     display: flex;
     justify-content: center;
 }
