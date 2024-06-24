@@ -1,5 +1,5 @@
 {
-  "name": "simple-code-editor",
+  "name": "editor",
   "version": "1.0.0",
   "description": "code editor",
   "main": "main.js",
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "electron .",
     "start-auto": "nodemon",
-    "package": "electron-packager . MyElectronApp --platform=win32 --arch=x64 --out=dist",
+    "package-win32-x64": "electron-packager . Editor --platform=win32 --arch=x64 --out=dist",
+    "package-win32-x32": "electron-packager . Editor --platform=win32 --arch=x86 --out=dist",
     "build-x64": "electron-builder"
   },
   "author": "Jit Debnath",
@@ -20,32 +21,16 @@
     "nodemon": "^3.1.3"
   },
   "build": {
-    "appId": "com.NEO.OMEGA",
-    "productName": "OMEGA",
-    "files": [
-      "dist/**/*",
-      "node_modules/**/*",
-      "build.js",
-      "package.json",
-      "index.html",
-      "style.css"
-    ],
-    "win": {
-      "target": [
-        {
+    "appId": "com.NEO.Editor",
+    "productName": "Editor",
+    "files": ["dist/**/*","node_modules/**/*","build.js","package.json","index.html","style.css"],
+    "win": {"target": [{
           "target": "msi",
           "arch": ["x64"]
         }
       ],
-      "icon": "icon.png",
-      "msi": {
-        "oneClick": false,
-        "perMachine": true,
-        "allowElevation": true,
-        "createDesktopShortcut": true,
-        "createStartMenuShortcut": true,
-        "shortcutName": "OMEGA"
-      }
+      "icon": "png/expand.png"
     }
   }
 }
+
