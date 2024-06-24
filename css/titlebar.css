@@ -1,0 +1,76 @@
+.titlebar {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    -webkit-app-region: drag;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+}
+
+.icon img {
+    height: 30px;
+    width: 30px;
+}
+
+.menubar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+}
+
+.menubar span {
+    font-size: small;
+    height: 100%;
+    padding: 5px 13px;
+}
+
+.menubar span:hover {
+    background-color: rgb(73, 73, 73);
+    border-radius: 5px;
+}
+
+.window-control {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    -webkit-app-region: no-drag;
+}
+
+.window-control .box {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-control .box:hover {
+    background-color: rgb(73, 73, 73);
+
+}
+
+#minimize {
+    margin: 0 3px;
+    transform: translateY(-7px);
+
+}
+
+#window {
+    font-size: small;
+    margin: 0 5px;
+    transform: scale(1.2);
+}
+
+#close {
+    transform: scale(0.9);
+}
