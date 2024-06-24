@@ -1,6 +1,7 @@
 .coding-ground {
     height: 70%;
     width: auto;
+    display: grid;
     border-radius: 0 0 15px 15px;
     background-color: rgb(17, 17, 17);
 }
