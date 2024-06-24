@@ -14,6 +14,7 @@ function NewWindow() {
             nodeIntegration: true,
             contextIsolation: false
         },
+
     });
     window.loadFile('index.html');
 }

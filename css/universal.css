@@ -3,7 +3,6 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: large;
     color: white;
     overflow: hidden;
     user-select: none;
@@ -21,12 +20,10 @@ main {
 
 .leftside {
     flex: 1;
-    margin: 10px 5px 10px 10px;
-    display: flex;
-    flex-direction: column;
+    margin: 10px 5px 0px 10px;
 }
 
 .rightside {
     width: 60px;
-    margin: 10px 10px 10px 5px;
+    margin: 10px 10px 0px 5px;
 }
