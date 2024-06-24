@@ -1,15 +1,6 @@
-.titlebar {
-    height: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgb(31, 31, 31);
-    -webkit-app-region: drag;
-}
-
+/* .titlebar is a universal element and is included in universal.css */
 .icon {
-    height: 30px;
+    height: 100%;
     width: 30px;
     background-size: contain;
 }

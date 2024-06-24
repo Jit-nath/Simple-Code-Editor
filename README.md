@@ -2,13 +2,21 @@
 
 > under development [ version 0.0.1 ]
 
-authors-
+Author - 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Jit-nath"><img src="https://avatars.githubusercontent.com/u/146635600?s=96&v=4" width="100px;" alt=""/><br /><sub><b>Jit Debnath</b></sub></a><br /></td>
+  </tr>
+</table>
 
-* Jit Debnath
-* Abhishek Kumar Yadav
-* Arnab Dey
+Contributors-
 
-include your name with pull request.
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Arnab27622"><img src="https://avatars.githubusercontent.com/u/146647360?v=4" width="100px;" alt=""/><br /><sub><b>Arnab Dey</b></sub></a><br/></td>
+    <td align="center"><a href="https://github.com/Abhishekyadav26"><img src="https://avatars.githubusercontent.com/u/143870083?v=4" width="100px;" alt=""/><br /><sub><b>Abhishek Kumar Yadav</b></sub></a><br /></td>
+  </tr>
+</table>
 
 ---
 

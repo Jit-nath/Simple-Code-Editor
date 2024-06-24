@@ -1,16 +1,16 @@
 .terminal {
-    height: 30%;
-    width: auto;
+    height: 21.5%;
+    border-radius: 15px;
 }
 
 #command-input-area {
     height: 100%;
     width: 100%;
+    padding: 20px;
     border-radius: 15px;
     resize: none;
     background-color: rgb(17, 17, 17);
     color: white;
-    padding: 20px;
 }
 
 #command-input-area:focus {
