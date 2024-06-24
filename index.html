@@ -1,111 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OMEGA</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMEGA</title>
 
-        <link rel="stylesheet" href="css/universal.css">
-        <link rel="stylesheet" href="css/coding-ground.css">
-        <link rel="stylesheet" href="css/terminal.css">
-        <link rel="stylesheet" href="css/sidebar.css">
-        <link rel="stylesheet" href="css/titlebar.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/coding-ground.css">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/titlebar.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <script src="js/ace.js"></script>
+
+    <script src="js/syntax-highlighter/mode-c_cpp.js"></script>
+    <script src="js/syntax-highlighter/mode-css.js"></script>
+    <script src="js/syntax-highlighter/mode-html.js"></script>
+    <script src="js/syntax-highlighter/mode-java.js"></script>
+    <script src="js/syntax-highlighter/mode-javascript.js"></script>
+    <script src="js/syntax-highlighter/mode-json.js"></script>
+    <script src="js/syntax-highlighter/mode-python.js"></script>
+    <script src="js/theme/theme-chaos.js"></script>
+    <script src="js/theme/theme-dracula.js"></script>
+    <script src="js/theme/theme-monokai.js"></script>
+    <script src="js/theme/theme-twilight.js"></script>
+
+    <style type="text/css" media="screen">
+        #editor {
+            position: relative;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+
+</head>
 
 
-
-        <style type="text/css" media="screen">
-            #editor {
-                position: relative;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
-        </style>
-
-    </head>
-
-
-    <body>
-        <div class="titlebar">
-            <div class="icon">
-                <img src="png/expand.png" alt="icon">
+<body>
+    <div class="titlebar">
+        <div class="icon">
+            <img src="png/expand.png" alt="icon">
+        </div>
+        <div class="menubar">
+            <span>File</span>
+            <span>Edit</span>
+            <span>Selection</span>
+            <span>View</span>
+            <span>Go</span>
+            <span>Run</span>
+            <span>Terminal</span>
+            <span>Help</span>
+        </div>
+    </div>
+    <main>
+        <div class="leftside">
+            <div class="tabs-bar">
+                <span class="tabs">tab1</span>
+                <span class="tabs">tab2</span>
+                <span class="tabs">tab3</span>
             </div>
-            <div class="menubar">
-                <span>File</span>
-                <span>Edit</span>
-                <span>Selection</span>
-                <span>View</span>
-                <span>Go</span>
-                <span>Run</span>
-                <span>Terminal</span>
-                <span>Help</span>
+
+            <div class="coding-ground">
+                <div id="editor"></div>
+            </div>
+            <div class="resizing-bar">
+                <span class="material-symbols-outlined">
+                    more_horiz
+                </span>
+            </div>
+            <div class="terminal">
+                <textarea id="command-input-area"></textarea>
             </div>
         </div>
-        <main>
-            <div class="leftside">
-                <div class="tabs-bar">
-                    <span class="tabs">tab1</span>
-                    <span class="tabs">tab2</span>
-                    <span class="tabs">tab3</span>
+
+        <div class="rightside">
+            <div class="sidebar">
+
+                <div class="expand-on-click" id="files">
+                    <img class="image" src="png/expand.png" alt="explorer">
                 </div>
 
-                <div class="coding-ground">
+                <div class="expand-on-click" id="git">
+                    <img class="image" src="png/expand.png" alt="git">
                 </div>
-                <div class="resizing-bar">
-                    <span class="material-symbols-outlined">
-                        more_horiz
-                    </span>
+
+                <div class="expand-on-click" id="search">
+                    <img class="image" src="png/expand.png" alt="search">
                 </div>
-                <div class="terminal">
-                    <textarea id="command-input-area"></textarea>
+
+                <div class="expand-on-click" id="themes">
+                    <img class="image" src="png/expand.png" alt="themes">
                 </div>
+
             </div>
-
-            <div class="rightside">
-                <div class="sidebar">
-
-                    <div class="expand-on-click" id="files">
-                        <img class="image" src="png/expand.png" alt="explorer">
-                    </div>
-
-                    <div class="expand-on-click" id="git">
-                        <img class="image" src="png/expand.png" alt="git">
-                    </div>
-
-                    <div class="expand-on-click" id="search">
-                        <img class="image" src="png/expand.png" alt="search">
-                    </div>
-
-                    <div class="expand-on-click" id="themes">
-                        <img class="image" src="png/expand.png" alt="themes">
-                    </div>
-
-                </div>
-                <div class="sidebar-extend">
-                    <!-- items will be added dynamicly through js -->
-                </div>
+            <div class="sidebar-extend">
+                <!-- items will be added dynamically through js -->
             </div>
-        </main>
+        </div>
+    </main>
 
-
-        <script src="js/ace.js"></script>
-        <script src="js/ui-js/coding-ground.js"></script>
-
-        <script src="js/syntax-highlighter/mode-c_cpp.js"></script>
-        <script src="js/syntax-highlighter/mode-css.js"></script>
-        <script src="js/syntax-highlighter/mode-html.js"></script>
-        <script src="js/syntax-highlighter/mode-java.js"></script>
-        <script src="js/syntax-highlighter/mode-javascript.js"></script>
-        <script src="js/syntax-highlighter/mode-json.js"></script>
-        <script src="js/syntax-highlighter/mode-python.js"></script>
-        <script src="js/theme/theme-chaos.js"></script>
-        <script src="js/theme/theme-dracula.js"></script>
-        <script src="js/theme/theme-monokai.js"></script>
-        <script src="js/theme/theme-twilight.js"></script>
-    </body>
+    <script src="js/ui-js/coding-ground.js"></script>
+</body>
 
 </html>
