@@ -1,0 +1,52 @@
+* {
+    color: white;
+}
+
+html {
+    background-color: black;
+}
+
+.titlebar {
+    background-color: rgb(34, 34, 34);
+}
+
+.window-control .box:hover {
+    background-color: rgb(73, 73, 73);
+
+}
+
+.menubar span:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+.coding-ground {
+    background-color: rgb(17, 17, 17);
+}
+
+.tabs-bar {
+    background-color: rgb(17, 17, 17);
+}
+
+.tabs {
+    background-color: rgb(30, 30, 30);
+}
+
+.tabs:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.tabs:active {
+    background-color: rgb(49, 49, 49);
+}
+
+.statusbar {
+    background-color: rgb(30, 30, 208);
+}
+
+#command-input-area {
+    background-color: rgb(17, 17, 17);
+}
+
+.sidebar {
+    background-color: rgb(28, 28, 28);
+}

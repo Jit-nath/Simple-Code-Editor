@@ -9,8 +9,6 @@
     padding: 20px;
     border-radius: 15px;
     resize: none;
-    background-color: rgb(17, 17, 17);
-    color: white;
 }
 
 #command-input-area:focus {
