@@ -1,6 +1,6 @@
 .sidebar {
     width: 60px;
-    height: 90vh;
+    height: 100%;
     border-radius: 15px;
     /*flex down*/
     display: flex;

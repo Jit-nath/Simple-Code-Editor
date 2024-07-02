@@ -1,6 +1,4 @@
 .statusbar {
-    position: fixed;
-    bottom: 0;
     width: 100vw;
     height: 20px;
     z-index: 1;

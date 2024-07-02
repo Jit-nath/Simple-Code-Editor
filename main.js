@@ -10,7 +10,6 @@ function NewWindow() {
             height: 30
         },
         webPreferences: {
-            // preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
             contextIsolation: false
         },

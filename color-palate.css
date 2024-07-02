@@ -7,7 +7,7 @@ html {
 }
 
 .titlebar {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(31, 31, 31);
 }
 
 .window-control .box:hover {
@@ -27,15 +27,15 @@ html {
     background-color: rgb(17, 17, 17);
 }
 
-.tabs {
+.tabs-bar span {
     background-color: rgb(30, 30, 30);
 }
 
-.tabs:hover {
+.tabs-bar span:hover {
     background-color: rgb(49, 49, 49);
 }
 
-.tabs:active {
+.tabs-bar span:active {
     background-color: rgb(49, 49, 49);
 }
 
