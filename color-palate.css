@@ -2,51 +2,58 @@
     color: white;
 }
 
+:root {
+    --main-bgcolor: rgb(17, 17, 17);
+    --text-color: white;
+    --hover-color: rgb(48, 48, 48);
+    --secondary-bgcolor: rgb(30, 30, 30);
+    --active: rgb(49, 49, 49);
+}
+
 html {
     background-color: black;
 }
 
 .titlebar {
-    background-color: rgb(31, 31, 31);
+    background-color: var(--main-bgcolor);
 }
 
-.window-control .box:hover {
-    background-color: rgb(73, 73, 73);
-
+.menubar {
+    color: grey;
 }
 
 .menubar span:hover {
-    background-color: rgb(73, 73, 73);
+    background-color: var(--hover-color);
 }
 
 .coding-ground {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--main-bgcolor);
 }
 
 .tabs-bar {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--main-bgcolor);
 }
 
 .tabs-bar span {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--secondary-bgcolor);
 }
 
 .tabs-bar span:hover {
-    background-color: rgb(49, 49, 49);
+    background-color: var(--hover-color);
 }
 
 .tabs-bar span:active {
-    background-color: rgb(49, 49, 49);
+    background-color: var(--active);
 }
 
 .statusbar {
-    background-color: rgb(30, 30, 208);
+    background-color: rgb(129, 129, 129);
 }
 
 #command-input-area {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--main-bgcolor);
 }
 
 .sidebar {
-    background-color: rgb(28, 28, 28);
+    background-color: var(--main-bgcolor);
 }

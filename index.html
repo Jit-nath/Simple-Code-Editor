@@ -11,28 +11,15 @@
         <link rel="stylesheet" href="css/terminal.css">
         <link rel="stylesheet" href="css/sidebar.css">
         <link rel="stylesheet" href="css/titlebar.css">
-        <link rel="stylesheet" href="/css/stausbar.css">
         <link rel="stylesheet" href="font.css">
         <link rel="stylesheet" href="color-palate.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
-        <script src="js/ace.js"></script>
-
-        <script src="js/syntax-highlighter/mode-c_cpp.js"></script>
-        <script src="js/syntax-highlighter/mode-css.js"></script>
-        <script src="js/syntax-highlighter/mode-html.js"></script>
-        <script src="js/syntax-highlighter/mode-java.js"></script>
-        <script src="js/syntax-highlighter/mode-javascript.js"></script>
-        <script src="js/syntax-highlighter/mode-json.js"></script>
-        <script src="js/syntax-highlighter/mode-python.js"></script>
-        <script src="js/theme/theme-chaos.js"></script>
-        <script src="js/theme/theme-dracula.js"></script>
-        <script src="js/theme/theme-monokai.js"></script>
-        <script src="js/theme/theme-twilight.js"></script>
+        <script src="ace/ace.js"></script>
+        <script src="js/editor.js"></script>
 
 
-        <script src="js/ui-js/coding-ground.js"></script>
+
     </head>
 
 
@@ -42,9 +29,9 @@
                 <img src="png/expand.png" alt="icon">
             </div>
             <div class="menubar">
-                <span>File</span>
-                <span>Edit</span>
-                <span>Help</span>
+                <span id="file" class="control">File</span>
+                <span id="edit" class="control">Edit</span>
+                <span id="help" class="control">Help</span>
             </div>
         </div>
         <main>
@@ -95,7 +82,7 @@
         <div class="statusbar">
 
         </div>
-
+        <script src="/js/titlebar-control.js"></script>
     </body>
 
 </html>

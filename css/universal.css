@@ -14,7 +14,7 @@ body {
 }
 
 .titlebar {
-    height: 30px;
+    height: 33px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,16 +30,28 @@ main {
 
 .leftside {
     flex: auto;
-    margin: 10px 5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
 .rightside {
-    width: 70px;
+    width: 60px;
     height: auto;
-    margin: 10px 0;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+}
+
+.statusbar {
+    width: 100vw;
+    height: 20px;
+    z-index: 1;
 }

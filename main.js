@@ -1,24 +1,28 @@
-const { app, BrowserWindow } = require('electron');
-function NewWindow() {
-    const window = new BrowserWindow({
-        minHeight: 600,
-        minWidth: 900,
+const { app, BrowserWindow, Menu } = require('electron');
+
+function createWindow() {
+    const Window = new BrowserWindow({
+        width: 800,
+        height: 600,
         titleBarStyle: 'hidden',
-        titleBarOverlay: {
-            color: 'rgb(31, 31, 31)',
+        titleBarOverlay:
+        {
+            color: 'rgb(17,17,17)',
             symbolColor: '#fff',
-            height: 30
+            height: 33
         },
-        webPreferences: {
+        webPreferences:
+        {
             nodeIntegration: true,
             contextIsolation: false
-        },
-
+        }
     });
-    window.loadFile('index.html');
+
+    Window.loadFile('index.html');
+
 }
 
-app.whenReady().then(NewWindow);
+app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
@@ -28,6 +32,6 @@ app.on('window-all-closed', () => {
 
 app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
-        NewWindow();
+        createWindow();
     }
 });

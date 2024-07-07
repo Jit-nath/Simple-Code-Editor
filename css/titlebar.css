@@ -14,49 +14,25 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     -webkit-app-region: no-drag;
 }
 
 .menubar span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: small;
-    height: 100%;
-    padding: 5px 13px;
+    height: 90%;
+    padding: 5px 13px 6px 13px;
 }
 
 .menubar span:hover {
     border-radius: 5px;
 }
 
-.window-control {
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    -webkit-app-region: no-drag;
-}
-
-.window-control .box {
-    height: 100%;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#minimize {
-    margin: 0 3px;
-    transform: translateY(-7px);
-
-}
-
-#window {
-    font-size: small;
-    margin: 0 5px;
-    transform: scale(1.2);
-}
-
-#close {
-    transform: scale(0.9);
+.active {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
 }
